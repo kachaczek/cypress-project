@@ -1,0 +1,17 @@
+{
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "cypress-if": "^1.13.2"
+  },
+  "main": "cypress.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "utworz projekt od zera, stworzy package.json To utworzy katalog node_modules i zainstaluje Cypress w devDependencies. npm init -y npm test"
+}

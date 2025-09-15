@@ -1,0 +1,11 @@
+{
+  "name": "Dorota",
+  "lastName": "Kolorowa",
+  "line1": "ul. Kolorowa 15/2",
+  "city": "Łódź",
+  "state": "Łódź Voivodeship",
+  "zipcode": "90-001",
+  "country": "Poland",
+  "phone": "+48 484-848-234",
+  "email": "kasia.kolorowa@example.com"
+}

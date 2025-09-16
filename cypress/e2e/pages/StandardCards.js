@@ -24,7 +24,7 @@ class StandardCards {
             .first()
             .should('be.visible')
             .clear()
-            .type(value);
+            .type(String(value));
 
         // Set quantity
         cy.get('input[id^="quantity"]', { timeout: 10000 })

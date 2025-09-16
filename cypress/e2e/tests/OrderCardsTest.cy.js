@@ -99,7 +99,7 @@ describe('Order Cards', () => {
               .should('have.value', values[3].toString());
         });
 
-        standardCards.addCard(cards.card5, values[5], 1, false);
+        standardCards.addCard(cards.card5, values[4], 1, false);
         cy.get('[data-test-id="card-5"]').scrollIntoView()
           .within(() => {
             cy.get('.fw-semibold')

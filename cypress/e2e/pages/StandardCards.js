@@ -8,7 +8,8 @@ class StandardCards {
      * @param {boolean} isOversized - Whether the card is oversized
      */
     addCard(cardName, value, quantity = 1, isOversized = false) {
-        // Search card and 
+
+        // Search card
         cy.get('.px-4.py-3.ps-5.form-control', { timeout: 10000 })
             .should('be.visible')
             .type(cardName);
@@ -19,15 +20,17 @@ class StandardCards {
             .click();
 
         // Declared value
-        cy.get('.Input_input__kPl3n input', { timeout: 15000 })
-        .eq(3)
-        .should('be.visible')
-        .type(value.toString());
+        cy.get('input[id^="value"]', { timeout: 15000 })
+            .first()
+            .should('be.visible')
+            .clear()
+            .type(value);
 
         // Set quantity
         cy.get('input[id^="quantity"]', { timeout: 10000 })
-            .eq(0)
+            .first()
             .should('be.visible')
+            .clear()
             .type(`${quantity}`)
 
         if (isOversized) {
@@ -39,14 +42,6 @@ class StandardCards {
         cy.contains('button', 'Continue', { timeout: 10000 })
             .should('be.enabled')
             .click();
-    }
-
-    // Verify order summary
-    verifyOrderSummary() {
-    // cy.get('.order-summary', { timeout: 20000 }) // increase timeout
-    //     // .should('be.visible')
-    //     .and('contain', 'Subtotal')
-    //     .and('contain', 'Total');
     }
 }
 

@@ -1,7 +1,3 @@
-// import 'cypress-if'
-// install
-// npm install --save-dev cypress-if
-
 class HomePage {
     visit() {
         cy.visit('https://beckett.com', {

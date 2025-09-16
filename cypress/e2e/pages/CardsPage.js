@@ -11,7 +11,7 @@ class CardsPage {
     chooseUserGuest() {
         cy.get('body > div.fade.modal.show').then($modal => {
             if ($modal.length > 0) {
-                cy.wrap($modal).find('button').contains('Continue as Guest').click()
+                cy.wrap($modal).find('button').contains('Continue as Guest').click();
             }
         })
     }

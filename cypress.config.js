@@ -8,13 +8,3 @@ module.exports = defineConfig({
     supportFile: 'cypress/support/e2e.js'
   }
 });
-
-
-// module.exports = defineConfig({
-//   e2e: {
-//     baseUrl: "https://example.cypress.io",
-//     setupNodeEvents(on, config) {
-
-//     },
-//   },
-// });
